@@ -24,7 +24,10 @@ class AppCoordinator: AppKitOrUIKitWindowCoordinator<AppDestination> {
     override func transition(for route: AppDestination) -> ViewTransition {
         switch route {
             case .main:
-            let mainView: MainViewScreen = container.resolve(from: .main)
+                let mainView: MainViewScreen = container.resolve(from: .main)
+            return .set(mainView.environmentObject(store))
+            case .root:
+                let mainView: RootViewScreen = container.resolve(from: .root)
             return .set(mainView.environmentObject(store))
         }
     }

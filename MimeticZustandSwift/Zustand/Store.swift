@@ -8,6 +8,9 @@
 import Combine
 
 class Store<T>: ObservableObject {
+    
+    typealias StateType = T
+    
     @Published var state: T
 
     init(initialState: T) {
@@ -22,6 +25,12 @@ class Store<T>: ObservableObject {
 
     func create<U>(_ transform: (inout T) -> U) -> U {
         transform(&state)
+    }
+    
+    func subscribe(_ subscriber: @escaping (T) -> Void) -> AnyCancellable {
+        return $state.sink { newState in
+            subscriber(newState)
+        }
     }
 }
 

@@ -10,4 +10,5 @@ import Foundation
 
 enum AppDestination {
     case main
+    case root
 }
