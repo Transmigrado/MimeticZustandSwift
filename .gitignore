@@ -1,0 +1,66 @@
+# macOS
+.DS_Store
+# Xcode
+.DS_Store
+xcuserdata/
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.xcworkspace/
+DerivedData/
+*.hmap
+*.ipa
+*.xcuserdatad
+*.swiftpm
+*.xcfilelist
+*.xccheckout
+*.xcscheme
+*.xcconfig
+*.xclangspec
+*.xcstickers
+# Swift Package Manager
+# Add this line if you use SPM in your project
+# /Packages
+# CocoaPods
+Pods/
+# Carthage
+Carthage/Checkouts
+Carthage/build
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+# Android Studio
+*.iml
+.idea/
+.gradle/
+local.properties
+/.idea/workspace.xml
+/.idea/tasks.xml
+/.idea/gradle.xml
+/.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+# Android Studio 4.1+ serialized cache file
+.idea/caches/build_file_checksums.ser
+# Intellij
+out/
+# Build generated files
+build/
+# Skip the bin and obj folders for projects built with Mono
+**/bin/
+**/obj/
+# Flutter/Dart/Pub related
+**/build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+# Web related
+lib/generated_plugin_registrant.dart
+web/codegen/
+web/packages/
+# Exceptions to above rules.
+!/.gitignore
